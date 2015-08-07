@@ -40,8 +40,9 @@ function server (config) {
       log.info('processing sendyo#' + job.id);
 
       yo.yoLink(job.data.userId, job.data.link)
-        .then(function () {
-          log.info('sendyo#' + job.id, 'succeeded');
+        .then(function (res) {
+          log.info('sendyo#' + job.id, 'succeeded:', 'yo#' + res.yo_id);
+          job.log('yo#' + res.yo_id);
           db.resetYoFailCount (job.data.userId);
           done();
         })
