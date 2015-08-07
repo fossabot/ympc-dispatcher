@@ -10,7 +10,6 @@
   "dependencies": {
     "bole": "^2.0.0",
     "kue": "^0.9.4",
-    "rc": "^1.1.0",
     "rucola": "^1.0.0",
     "ympc-dbclient": "git+https://github.com/yomypopcorn/ympc-dbclient.git#master",
     "ympc-yo": "git+https://github.com/yomypopcorn/ympc-yo.git#master"
